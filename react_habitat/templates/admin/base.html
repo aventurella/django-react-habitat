@@ -1,0 +1,13 @@
+{% extends "admin/base.html" %}
+{% load static react_habitat_tags %}
+
+{% block extrahead %}
+{{ block.super }}
+<script src="{% static 'react_habitat/react-habitat-bundle.min.js' %}"></script>
+{% endblock %}
+
+
+{% block footer %}
+{{ block.super }}
+{% react_habitat_bootstrap %}
+{% endblock footer %}
